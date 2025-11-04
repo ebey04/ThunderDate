@@ -90,6 +90,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  font-family: sans-serif;
 }
 
 h2 {
@@ -114,4 +115,21 @@ form {
   max-width: 65ch;
 }
 
+#weapon{
+    margin: 1rem 0;
+}
 
+#password{
+    margin-bottom: .5rem;
+}
+
+button{
+    padding: .5rem;
+    width: 10rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    color: gold;
+    background-color: rgba(61, 7, 81, 0.786);
+    font-weight: bold;
+    box-shadow: 2px 2px 1px rgb(220, 213, 117);
+}
