@@ -107,7 +107,7 @@ h2 {
 }
 
 h3 {
-  margin-bottom: 2.5rem;
+  margin-bottom: 2rem;
   font-weight: 250;
 }
 
@@ -126,16 +126,16 @@ form {
 #personal{
   display: flex;
   flex-wrap: wrap;        /* lets it make two rows */
-  gap: 1rem .5rem;         /* first value = vertical gap, second = horizontal gap */
+  gap: 1.5rem .5rem;         /* first value = vertical gap, second = horizontal gap */
   max-width: 60ch;
 }
 
 #weapon{
-    margin: 1rem 0;
+    margin: 1.5rem 0;
 }
 
 #password{
-    margin-bottom: .5rem;
+    margin-bottom: 1rem;
 }
 
 input:valid {
