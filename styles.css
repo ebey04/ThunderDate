@@ -29,6 +29,7 @@ h1{
     font-size: 4rem;
     font-family: 'Norse', sans-serif;
     letter-spacing:.5rem;
+    padding: 0.5rem 1rem;
     color: white;
     z-index: 1;
     
@@ -56,4 +57,5 @@ img{
 
 #caption{
     font-size: .75rem;
+    color: grey;
 }
