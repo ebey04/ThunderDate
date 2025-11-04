@@ -96,6 +96,10 @@ main {
 h2 {
     margin-top: 3rem;
   margin-bottom: 3rem;
+  font-family: 'Cinzel', sans-serif;
+  font-size: 2rem;
+  font-weight: 100;
+  max-width: 30ch;
 }
 
 h3 {
