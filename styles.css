@@ -112,7 +112,7 @@ form {
   display: flex;
   flex-wrap: wrap;        /* lets it make two rows */
   gap: 1rem .5rem;         /* first value = vertical gap, second = horizontal gap */
-  max-width: 65ch;
+  max-width: 60ch;
 }
 
 #weapon{
