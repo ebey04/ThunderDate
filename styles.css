@@ -26,7 +26,7 @@
 body {
   display: flex;
   height: 100vh;
-  overflow: hidden;
+  flex-direction: column;
   text-transform: uppercase; font-size: 0.8rem; letter-spacing: 0.05em;
 }
 
@@ -202,4 +202,25 @@ p a:focus{
 
 input[type="radio"] {
     accent-color: var(--main-color);
+}
+
+/*Media Queries*/
+
+/* Larger screens (tablet and up) */
+@media screen and (min-width: 768px) {
+  body {
+    flex-direction: row; /* side-by-side layout */
+  }
+
+  main {
+    padding: 2rem 3rem;
+  }
+}
+
+/* Even larger screens (desktop) */
+@media screen and (min-width: 1024px) {
+  main {
+    max-width: 960px;
+    margin: 0 auto;
+  }
 }
