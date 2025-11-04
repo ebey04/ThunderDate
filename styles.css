@@ -27,6 +27,7 @@ body {
   display: flex;
   height: 100vh;
   overflow: hidden;
+  text-transform: uppercase; font-size: 0.8rem; letter-spacing: 0.05em;
 }
 
 /* ---------- Header / Hero ---------- */
@@ -127,7 +128,7 @@ form {
   display: flex;
   flex-wrap: wrap;        /* lets it make two rows */
   gap: 1.5rem .5rem;         /* first value = vertical gap, second = horizontal gap */
-  max-width: 60ch;
+  max-width: 75ch;
 }
 
 #weapon{
@@ -168,7 +169,7 @@ button:hover{
 }
 
 p{
-    font-size: .75rem;
+    font-size: .65rem !important;
 }
 
 p a{
