@@ -1,0 +1,25 @@
+body{
+    display: flex;
+}
+
+h1{
+    position: relative;
+    top: 15rem;
+    left: 15rem;
+    background-color: whitesmoke;
+    opacity: .5;
+}
+
+#hero_img{
+    display: flex;
+    flex-direction: column;
+}
+
+img{
+    height: clamp(300px, 75%, 1000px);
+    width: clamp(250px, 75%, 950px);
+}
+
+#caption{
+    font-size: .75rem;
+}
