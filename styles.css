@@ -135,6 +135,19 @@ form {
     margin: 1.5rem 0;
 }
 
+#weapon fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+  box-shadow: none;
+}
+
+legend {
+  font-weight: bold; /* optional, just for styling */
+  margin-bottom: 0.5rem;
+}
+
+
 #password{
     margin-bottom: 1rem;
 }
