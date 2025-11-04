@@ -1,101 +1,109 @@
 @font-face {
-    font-family: 'Norse';
-    src: url('./fonts/Norse.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'Norse';
+  src: url('./fonts/Norse.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Norse';
-    src: url('./fonts/Norsebold.otf') format('opentype');
-    font-weight: bold;
-    font-style: normal;
+  font-family: 'Norse';
+  src: url('./fonts/Norsebold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
 }
 
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+/* ---------- Layout ---------- */
 body {
   display: flex;
   height: 100vh;
   overflow: hidden;
 }
 
-/**Hero Section**/
+/* ---------- Header / Hero ---------- */
+header {
+  flex: 0 0 40%; /* left side */
+  position: relative;
+  border: 2px solid transparent;
+}
 
+#hero_img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+#hero_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+#caption {
+  position: absolute;
+  bottom: 0.5rem;
+  left: 1rem;
+  font-size: 0.75rem;
+  color: grey;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+}
+
+/* Title overlay */
 h1 {
-  position: absolute;      
-  top: 40%;                  
-  left: 30%;                  
+  position: absolute;
+  top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
   font-family: 'Norse', sans-serif;
   font-size: 4rem;
   letter-spacing: 0.5rem;
   color: white;
   padding: 0.5rem 1rem;
-  text-shadow: 0 0 10px rgba(255,255,255,0.4);
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
   z-index: 2;
-}
-
-.big-letter{
-    font-size: 5rem;
 }
 
 h1::before {
   content: "";
   position: absolute;
   inset: 0;
-  background-color: rgb(61, 7, 81);
-  opacity: 0.5;
+  background-color: rgba(61, 7, 81, 0.6);
   z-index: -1;
 }
 
-#hero_img {
-  position: relative;
-  flex: 1;
-  margin-top: 2rem;
+.big-letter {
+  font-size: 5rem;
 }
 
-#hero_img img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+/* ---------- Main / Form ---------- */
+main {
+  flex: 0 0 60%; /* right side */
+  background-color: #ffe6e6;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
-#caption {
-    position: absolute;       
-    bottom: 0.5rem;
-    left: 1rem;
-    font-size: 0.75rem;
-    color: grey;
-    background-color: rgba(0,0,0,0.3); 
-    padding: 0.25rem 0.5rem;
-    border-radius: 4px;
+h2 {
+  margin-bottom: 1rem;
 }
 
-/**Form Section**/
-
-main{
-    flex: 1;                    
-    max-width: 70rem;          
-    display: flex;
-    flex-direction: column;    
-    justify-content: flex-start;
-    padding: 2rem;
-    margin-left: 1rem;
-    margin-right: 5rem;
-    flex-basis: 60%;
+h3 {
+  margin-bottom: 1.5rem;
 }
 
-h2{
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
 }
 
-h3{
-    margin-bottom: 2rem;
-}
