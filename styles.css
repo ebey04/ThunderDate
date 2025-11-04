@@ -86,7 +86,6 @@ h1::before {
 /* ---------- Main / Form ---------- */
 main {
   flex: 0 0 60%; /* right side */
-  background-color: #ffe6e6;
   padding: 2rem;
   display: flex;
   flex-direction: column;
@@ -94,7 +93,8 @@ main {
 }
 
 h2 {
-  margin-bottom: 1rem;
+    margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 h3 {
