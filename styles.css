@@ -132,6 +132,17 @@ form {
     margin-bottom: .5rem;
 }
 
+input:valid {
+  border: 2px solid limegreen;
+  background-color: #eaffea;
+}
+
+input:invalid {
+  border: 2px solid crimson;
+  background-color: #ffeaea;
+}
+
+
 button{
     padding: .5rem;
     width: 10rem;
