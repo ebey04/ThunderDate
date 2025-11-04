@@ -27,9 +27,8 @@ body {
 
 /* ---------- Header / Hero ---------- */
 header {
-  flex: 0 0 40%; /* left side */
+  flex: 0 0 50%; /* left side */
   position: relative;
-  border: 2px solid transparent;
 }
 
 #hero_img {
@@ -59,11 +58,12 @@ header {
 /* Title overlay */
 h1 {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 45%;
+  left: 48%;
   transform: translate(-50%, -50%);
   font-family: 'Norse', sans-serif;
   font-size: 4rem;
+  white-space: nowrap;
   letter-spacing: 0.5rem;
   color: white;
   padding: 0.5rem 1rem;
